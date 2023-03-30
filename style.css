@@ -418,14 +418,14 @@ p {
 
 @media only screen and (max-width: 500px) {
   .header h1 {
-    font-size: 50px;
+    font-size: 45px;
   }
 
   #red-paragraph {
   }
 
   .nav-footer a {
-    font-size: 17px;
+    font-size: 15px;
   }
   article h2 {
     font-size: 30px;
