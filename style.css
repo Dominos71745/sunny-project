@@ -1,0 +1,417 @@
+body {
+  margin: 0;
+}
+
+.header {
+  background-image: url("../sunnyside-agency-landing-page-main/image-header.jpg");
+  background-size: 1500px 800px;
+  background-position: 50% 60%;
+  height: 800px;
+}
+
+.header h1 {
+  position: relative;
+  text-align: center;
+  margin-top: 80px;
+  font-family: "Fraunces", serif;
+  font-size: 70px;
+  color: white;
+  letter-spacing: 8px;
+  animation: opacity 0.7s ease-in;
+}
+
+@keyframes opacity {
+  0% {
+    bottom: 50px;
+    opacity: 0;
+    animation-timing-function: linear;
+  }
+
+  50% {
+    bottom: 25px;
+    opacity: 50%;
+    animation-timing-function: linear;
+  }
+
+  100% {
+    bottom: 0;
+    opacity: 100%;
+    animation-timing-function: linear;
+  }
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+#hamburger-svg {
+  margin-top: 20px;
+}
+
+.navbar-mobile {
+  display: none;
+}
+
+#arrow {
+  display: block;
+  position: relative;
+  margin: auto;
+  animation: bounce 3s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 300px;
+    animation-timing-function: linear;
+  }
+  75% {
+    top: 150px;
+    animation-timing-function: linear;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+a {
+  margin: 20px;
+  color: white;
+  font-size: 18px;
+  font-family: "Barlow", sans-serif;
+  text-decoration: none;
+}
+
+article {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  margin: 0;
+  text-align: right;
+  margin-right: 200px;
+}
+
+.logo {
+  float: left;
+  margin-top: 30px;
+}
+
+#button {
+  background-color: white;
+  border-radius: 30px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 50px;
+  color: hsl(212, 27%, 19%);
+  font-family: "Fraunces", serif;
+  font-size: 18px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+h2 {
+  margin: 0;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 40px;
+  color: hsl(212, 27%, 19%);
+}
+
+p {
+  margin: 20px 0;
+  font-size: 21px;
+  font-family: "Barlow", sans-serif;
+  color: hsl(233, 8%, 40%);
+  word-spacing: 3px;
+  line-height: 1.5;
+}
+
+.wrapper a {
+  margin: 10px 0;
+  font-size: 19px;
+  font-family: "Fraunces", serif;
+  text-transform: uppercase;
+  color: hsl(212, 27%, 19%);
+  word-spacing: 3px;
+}
+
+#egg-paragraph {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+}
+
+#egg-hover:hover {
+  text-decoration: underline 4px hsl(51, 100%, 49%);
+}
+
+#red-hover:hover {
+  text-decoration: underline 4px hsl(7, 99%, 70%);
+}
+
+#egg-img {
+  grid-column: 3 / span 2;
+  grid-row: 1;
+}
+
+#red-paragraph {
+  grid-column: 3 / span 2;
+  grid-row: 2;
+}
+
+#red-img {
+  grid-column: 1 / span 2;
+  grid-row: 2;
+}
+
+#cherry {
+  grid-column: 1 / span 2;
+  grid-row: 3;
+}
+
+#orange {
+  grid-column: 3 / span 2;
+  grid-row: 3;
+}
+
+#cherry-paragraph {
+  grid-column: 1 / span 2;
+  grid-row: 3;
+}
+
+#orange-paragraph {
+  grid-column: 3 / span 2;
+  grid-row: 3;
+}
+
+#footer-nav {
+  grid-column: 1 / span 4;
+  grid-row: 5;
+  height: 200px;
+}
+
+#egg-img,
+#red-img,
+#cherry,
+#orange,
+#milk,
+#fruit,
+#cone,
+#sugar {
+  width: 100%;
+}
+
+#cherry-paragraph {
+  display: flex;
+  margin-bottom: 80px;
+  justify-content: center;
+  text-align: center;
+  align-items: flex-end;
+}
+
+#orange-paragraph {
+  display: flex;
+  margin-bottom: 80px;
+  justify-content: center;
+  text-align: center;
+  align-items: flex-end;
+}
+
+#footer-nav {
+  background-color: hsl(168, 50%, 60%);
+  text-align: center;
+}
+
+#footer-nav img {
+  margin: 40px 0px auto 20px;
+}
+
+#footer-nav a {
+  font-family: "Barlow", sans-serif;
+  margin: 20px;
+  text-transform: none;
+}
+
+#footer-nav ul {
+  margin: 20px;
+}
+
+@media only screen and (max-width: 1050px) {
+  .navbar {
+    width: 80%;
+  }
+  article {
+    width: 80%;
+  }
+  #cherry-paragraph {
+    margin-bottom: 0px;
+  }
+
+  #orange-paragraph {
+    margin-bottom: 0px;
+  }
+}
+
+@media only screen and (max-width: 872px) {
+  .navbar {
+    width: 90%;
+  }
+  article h2 {
+    font-size: 23px;
+  }
+  article p,
+  span {
+    font-size: 18px;
+  }
+  #cherry-paragraph {
+    margin-bottom: 0px;
+  }
+
+  #orange-paragraph {
+    margin-bottom: 0px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .nav-right {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  .hamburger {
+    position: relative;
+    top: 30px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 40px;
+    border: none;
+    background: none;
+  }
+
+  .navbar-mobile {
+    position: absolute;
+    transform: translate(-50%);
+    top: 100px;
+    left: 50%;
+    padding: 0;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 70%;
+    background-color: rgb(255, 255, 255);
+    color: black;
+  }
+
+  .navbar-mobile a {
+    color: hsl(213, 9%, 39%);
+    font-size: 30px;
+    margin: 25px;
+  }
+
+  #button {
+    font-size: 30px;
+    width: 260px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: hsl(51, 100%, 49%);
+  }
+
+  article h2 {
+    font-size: 35px;
+  }
+
+  article p,
+  span {
+    font-size: 21px;
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6, 1fr);
+  }
+
+  #egg-img {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+  }
+  #egg-paragraph {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    text-align: center;
+  }
+
+  #red-img {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+  }
+  #red-paragraph {
+    grid-column: 1 / span 2;
+    grid-row: 4;
+    text-align: center;
+  }
+
+  #cherry {
+    grid-column: 1 / span 2;
+    grid-row: 5;
+    height: 100%;
+  }
+
+  #orange {
+    grid-column: 1 / span 2;
+    grid-row: 6;
+  }
+
+  #cherry-paragraph {
+    grid-column: 1 / span 2;
+    grid-row: 5;
+    margin-bottom: 20px;
+  }
+
+  #orange-paragraph {
+    grid-column: 1 / span 2;
+    grid-row: 6;
+    margin-bottom: 20px;
+  }
+
+  #milk {
+    grid-column: 1;
+    grid-row: 7;
+  }
+
+  #fruit {
+    grid-column: 2;
+    grid-row: 7;
+  }
+  #cone {
+    grid-column: 1;
+    grid-row: 8;
+  }
+
+  #sugar {
+    grid-column: 2;
+    grid-row: 8;
+  }
+
+  #footer-nav {
+    grid-column: 1 / span 2;
+    grid-row: 9;
+  }
+}
