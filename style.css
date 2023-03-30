@@ -415,3 +415,24 @@ p {
     grid-row: 9;
   }
 }
+
+@media only screen and (max-width: 500px) {
+  .header h1 {
+    font-size: 50px;
+  }
+
+  #red-paragraph {
+  }
+
+  .nav-footer a {
+    font-size: 17px;
+  }
+  article h2 {
+    font-size: 30px;
+  }
+
+  article p,
+  span {
+    font-size: 18px;
+  }
+}
