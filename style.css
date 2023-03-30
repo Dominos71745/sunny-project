@@ -235,7 +235,7 @@ p {
 }
 
 #footer-nav img {
-  margin: 40px 0px auto 20px;
+  margin: 40px 0px auto 0px;
 }
 
 #footer-nav a {
@@ -246,8 +246,8 @@ p {
 
 #footer-nav ul {
   margin: 20px;
+  padding: 0;
 }
-
 @media only screen and (max-width: 1050px) {
   .navbar {
     width: 80%;
@@ -434,5 +434,8 @@ p {
   article p,
   span {
     font-size: 18px;
+  }
+
+  #footer-nav {
   }
 }
